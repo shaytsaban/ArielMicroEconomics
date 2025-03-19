@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אוניברסיטת אריאל - מיקרו כלכלה</title>
+  <style>
+    /* שימוש בגופן יפה מאת Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Alef', sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      color: #343a40;
+      overflow-x: hidden;
+    }
+    
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      animation: headerFade 2s ease-out;
+    }
+    
+    @keyframes headerFade {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    .content {
+      background: #fff;
+      padding: 30px;
+      margin: 20px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      animation: slideIn 1s ease-out;
+    }
+    
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(100px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+    
+    h2 {
+      margin-top: 0;
+      color: #007bff;
+    }
+    
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: #0056b3;
+    }
+    
+    .card {
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 10px 0;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    }
+    
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      animation: footerFade 2s ease-out;
+    }
+    
+    @keyframes footerFade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>אוניברסיטת אריאל - מיקרו כלכלה</h1>
+    <p>אתר הקורס של ד"ר שי צבאן</p>
+  </header>
+  
+  <div class="container">
+    <section class="content">
+      <h2>ברוכים הבאים לקורס</h2>
+      <p>
+        באתר זה תמצאו את כל חומרי הקורס: תרגילים, פתרונות, הקלטות וכל החומר הנדרש. בנוסף, יועלו לכאן עזרים נוספים מעת לעת לפי הצורך.
+      </p>
+    </section>
+    
+    <section class="content">
+      <h2>פרטי המרצה</h2>
+      <p>
+        מרצה הקורס הוא ד"ר שי צבאן. ליצירת קשר ניתן לפנות לכתובת הדוא"ל: 
+        <a href="mailto:shay.tsaban@gmail.com">shay.tsaban@gmail.com</a>
+      </p>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 אוניברסיטת אריאל - מיקרו כלכלה. כל הזכויות שמורות.</p>
+  </footer>
+</body>
+</html>
