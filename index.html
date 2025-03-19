@@ -68,13 +68,49 @@
     }
     
     a {
-      color: #42a5f5;
       text-decoration: none;
       transition: color 0.3s;
     }
     
     a:hover {
       color: #0d47a1;
+    }
+    
+    /* כפתור להורדה */
+    .btn-download {
+      background: linear-gradient(135deg, #42a5f5, #478ed1);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      font-size: 1em;
+      margin-top: 10px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .btn-download:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    
+    /* כפתור יצירת קשר בתחתית */
+    .btn-footer {
+      background: #fff;
+      color: #ff7e5f;
+      padding: 8px 16px;
+      border-radius: 25px;
+      border: 2px solid #fff;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+    
+    .btn-footer:hover {
+      background: #ff7e5f;
+      color: #fff;
     }
     
     footer {
@@ -114,13 +150,14 @@
       <div class="btn-header">פרטי המרצה 👨‍🏫</div>
       <p>
         מרצה הקורס: ד"ר שי צבאן<br>
-        ליצירת קשר: <a href="mailto:shay.tsaban@gmail.com">shay.tsaban@gmail.com 📧</a>
+        ליצירת קשר: <a href="mailto:shay.tsaban@gmail.com" class="btn-footer">shay.tsaban@gmail.com 📧</a>
       </p>
     </section>
     
     <section class="content">
       <div class="btn-header">סיכומי השיעור 📝</div>
       <p>המשך יבוא</p>
+      <a href="https://github.com/shaytsaban/ArielMicroEconomics/blob/main/Course%20Notes%20-%202025%20B.xlsx" class="btn-download" target="_blank">הורד את סיכומי השיעורים</a>
     </section>
     
     <section class="content">
@@ -130,7 +167,9 @@
   </div>
   
   <footer>
-    <p>האתר נבנה באהבה ע״י ד״ר צבאן האגדי, צרו קשר ב <a href="mailto:shay.tsaban@gmail.com" style="color: #fff; text-decoration: underline;">shay.tsaban@gmail.com</a> 😊😄✨</p>
+    <p>האתר נבנה באהבה ע״י ד״ר צבאן האגדי, צרו קשר ב 
+      <a href="mailto:shay.tsaban@gmail.com" class="btn-footer">shay.tsaban@gmail.com</a> 😊😄✨
+    </p>
   </footer>
 </body>
 </html>
