@@ -4,62 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>אוניברסיטת אריאל - מיקרו כלכלה</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
-    /* שימוש בגופן יפה מאת Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
-    
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Alef', sans-serif;
-      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-      color: #343a40;
-      overflow-x: hidden;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(135deg, #f0f2f5, #d9e2ec);
+      color: #333;
+      direction: rtl;
     }
     
     header {
-      background-color: #007bff;
+      background: linear-gradient(135deg, #4b79a1, #283e51);
       color: #fff;
-      padding: 20px;
+      padding: 50px 20px;
       text-align: center;
-      position: relative;
-      animation: headerFade 2s ease-out;
+      animation: fadeInDown 1.5s ease-out;
     }
     
-    @keyframes headerFade {
-      from { opacity: 0; transform: translateY(-50px); }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
       to { opacity: 1; transform: translateY(0); }
     }
     
     .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
     
     .content {
       background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
       padding: 30px;
       margin: 20px 0;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      animation: slideIn 1s ease-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateX(100px); }
-      to { opacity: 1; transform: translateX(0); }
+    .content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
     
     h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
       letter-spacing: 1px;
     }
     
     h2 {
       margin-top: 0;
-      color: #007bff;
+      font-size: 2em;
+      color: #4b79a1;
+      border-bottom: 2px solid #4b79a1;
+      padding-bottom: 5px;
     }
     
     p {
@@ -68,40 +68,31 @@
     }
     
     a {
-      color: #007bff;
+      color: #4b79a1;
       text-decoration: none;
       transition: color 0.3s;
     }
     
     a:hover {
-      color: #0056b3;
-    }
-    
-    .card {
-      background: #f1f1f1;
-      padding: 20px;
-      border-radius: 8px;
-      margin: 10px 0;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+      color: #283e51;
     }
     
     footer {
-      background-color: #343a40;
+      background: #333;
       color: #fff;
       text-align: center;
-      padding: 15px 0;
-      margin-top: 30px;
-      animation: footerFade 2s ease-out;
+      padding: 20px 10px;
+      margin-top: 40px;
+      animation: fadeInUp 1.5s ease-out;
     }
     
-    @keyframes footerFade {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -115,15 +106,15 @@
     <section class="content">
       <h2>ברוכים הבאים לקורס</h2>
       <p>
-        באתר זה תמצאו את כל חומרי הקורס: תרגילים, פתרונות, הקלטות וכל החומר הנדרש. בנוסף, יועלו לכאן עזרים נוספים מעת לעת לפי הצורך.
+        כאן תמצאו את כל חומרי הקורס: תרגילים, פתרונות, הקלטות וכל החומר הנדרש ללמידה. האתר מתעדכן מעת לעת עם עזרים נוספים בהתאם לצורך.
       </p>
     </section>
     
     <section class="content">
       <h2>פרטי המרצה</h2>
       <p>
-        מרצה הקורס הוא ד"ר שי צבאן. ליצירת קשר ניתן לפנות לכתובת הדוא"ל: 
-        <a href="mailto:shay.tsaban@gmail.com">shay.tsaban@gmail.com</a>
+        מרצה הקורס: ד"ר שי צבאן. <br>
+        ליצירת קשר: <a href="mailto:shay.tsaban@gmail.com">shay.tsaban@gmail.com</a>
       </p>
     </section>
   </div>
