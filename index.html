@@ -78,7 +78,7 @@
     
     /* כפתור הורדה בצבע שונה וממורכז */
     .btn-download {
-      background: linear-gradient(135deg, #9b59b6, #8e44ad);
+      background: linear-gradient(135deg, #9b59b6, #8e44ad); /* Purple gradient for bonus */
       color: #fff;
       padding: 10px 20px;
       border-radius: 25px;
@@ -95,6 +95,47 @@
       transform: translateY(-3px);
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
+
+    /* Different color for course summary button */
+    .btn-download-summary {
+        background: linear-gradient(135deg, #2ecc71, #27ae60); /* Green gradient for summary */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: block;
+        font-size: 1em;
+        margin: 20px auto;
+        text-decoration: none;
+        width: fit-content;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn-download-summary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    /* Different color for Zoom button */
+    .btn-zoom {
+        background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient for Zoom */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: block;
+        font-size: 1em;
+        margin: 20px auto;
+        text-decoration: none;
+        width: fit-content;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn-zoom:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
     
     /* כפתור יצירת קשר בתחתית */
     .btn-footer {
@@ -136,12 +177,21 @@
     .video-wrapper {
       text-align: center;
       margin: 20px 0;
+      position: relative; /* Needed for potential aspect ratio control */
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
     }
     
     .video-wrapper iframe {
-      border: 4px solid;
-      border-image: linear-gradient(135deg, #ff7e5f, #feb47b) 1;
-      border-radius: 15px;
+       border: 4px solid;
+       border-image: linear-gradient(135deg, #ff7e5f, #feb47b) 1;
+       border-radius: 15px;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
     }
   </style>
 </head>
@@ -169,14 +219,22 @@
     
     <section class="content">
       <div class="btn-header">מפגשים חיים - הצטרפו לתרגילים של יום חמישי כאן 📡</div>
-      <a href="https://yvc-ac-il.zoom.us/j/6302238641" class="btn-download" target="_blank">הצטרף למפגש הזום</a>
+      <a href="https://yvc-ac-il.zoom.us/j/6302238641" class="btn-zoom" target="_blank">הצטרף למפגש הזום</a>
     </section>
     
     <section class="content">
       <div class="btn-header">סיכומי השיעור 📝</div>
-      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Course%20Notes%20-%202025%20B.xlsx" class="btn-download" target="_blank" download>הורד את סיכומי השיעורים</a>
+      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Course%20Notes%20-%202025%20B.xlsx" class="btn-download-summary" target="_blank" download>הורד את סיכומי השיעורים</a>
     </section>
-    
+
+    <section class="content">
+        <div class="btn-header">מטלת בונוס 🎯</div>
+        <p>
+            כאן תמצאו את מטלת הבונוס של הקורס, אותה עליכם להגיש באתר הקורס הרשמי - במודל - בצורה מסודרת ומדויקת לפי ההנחיות שניתנו, כדי להיות זכאים לבונוס, וזאת - עד לסיום הסמסטר.
+        </p>
+        <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Questions%20Pool%20for%20Studs%20NO%20ANS.docx" class="btn-download" target="_blank" download>הורד את קובץ השאלות למטלה</a>
+        <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Questions%20Pool%20for%20Students%20ANS.xlsx" class="btn-download" target="_blank" download>הורד את קובץ התשובות למטלה</a>
+    </section>
     <section class="content">
       <div class="btn-header">הקלטות המפגשים 🎥</div>
       <p>הרצאה 1 - 19.3.2025 - עקומת התמורה, עלות כוללת, עלות ממוצעת ועלות שולית</p>
@@ -215,7 +273,7 @@
       </div>
       
       
-      <p>המשך יבוא</p>
+      <p>המשך יבוא...</p>
     </section>
   </div>
   
