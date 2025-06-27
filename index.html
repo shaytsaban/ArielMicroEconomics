@@ -1,370 +1,373 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>אוניברסיטת אריאל - מיקרו כלכלה</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <style>
-    /* עיצוב מודרני, חי ונעים אך גם קריא ומקצועי */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Rubik', sans-serif;
-      background: linear-gradient(135deg, #fdfdfe, #f0f4f8);
-      color: #333;
-      direction: rtl;
-    }
-    
-    header {
-      background: linear-gradient(135deg, #ff7e5f, #feb47b);
-      color: #fff;
-      padding: 50px 20px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      animation: fadeInDown 1s ease-out;
-    }
-    
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .container {
-      max-width: 960px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    
-    .content {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 30px;
-      margin: 20px 0;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .content:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-    }
-    
-    /* כותרות בעיצוב "כפתור" לבבי */
-    .btn-header {
-      background: linear-gradient(135deg, #42a5f5, #478ed1);
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 25px;
-      display: inline-block;
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    
-    a {
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    
-    a:hover {
-      color: #0d47a1;
-    }
-    
-    /* כפתור הורדה בצבע שונה וממורכז */
-    .btn-download {
-      background: linear-gradient(135deg, #9b59b6, #8e44ad); /* Purple gradient for bonus */
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 25px;
-      display: block;
-      font-size: 1em;
-      margin: 20px auto;
-      text-decoration: none;
-      width: fit-content;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .btn-download:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אוניברסיטת אריאל - מיקרו כלכלה</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* עיצוב מודרני, חי ונעים אך גם קריא ומקצועי */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(135deg, #fdfdfe, #f0f4f8);
+      color: #333;
+      direction: rtl;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      animation: fadeInDown 1s ease-out;
+    }
+    
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    
+    .content {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin: 20px 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    
+    /* כותרות בעיצוב "כפתור" לבבי */
+    .btn-header {
+      background: linear-gradient(135deg, #42a5f5, #478ed1);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: inline-block;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    
+    a {
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    a:hover {
+      color: #0d47a1;
+    }
+    
+    /* כפתור הורדה בצבע שונה וממורכז */
+    .btn-download {
+      background: linear-gradient(135deg, #9b59b6, #8e44ad); /* Purple gradient for bonus */
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      display: block;
+      font-size: 1em;
+      margin: 20px auto;
+      text-decoration: none;
+      width: fit-content;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .btn-download:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
 
-    /* Different color for course summary button */
-    .btn-download-summary {
-        background: linear-gradient(135deg, #2ecc71, #27ae60); /* Green gradient for summary */
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 25px;
-        display: block;
-        font-size: 1em;
-        margin: 20px auto;
-        text-decoration: none;
-        width: fit-content;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
+    /* Different color for course summary button */
+    .btn-download-summary {
+        background: linear-gradient(135deg, #2ecc71, #27ae60); /* Green gradient for summary */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: block;
+        font-size: 1em;
+        margin: 20px auto;
+        text-decoration: none;
+        width: fit-content;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-    .btn-download-summary:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
+    .btn-download-summary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
 
-    /* Different color for Zoom button */
-    .btn-zoom {
-        background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient for Zoom */
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 25px;
-        display: block;
-        font-size: 1em;
-        margin: 20px auto;
-        text-decoration: none;
-        width: fit-content;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
+    /* Different color for Zoom button */
+    .btn-zoom {
+        background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient for Zoom */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+        display: block;
+        font-size: 1em;
+        margin: 20px auto;
+        text-decoration: none;
+        width: fit-content;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-    .btn-zoom:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
+    .btn-zoom:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
 
-    
-    /* כפתור יצירת קשר בתחתית */
-    .btn-footer {
-      background: #fff;
-      color: #ff7e5f;
-      padding: 8px 16px;
-      border-radius: 25px;
-      border: 2px solid #fff;
-      font-weight: bold;
-      text-decoration: none;
-      margin-left: 10px;
-      transition: background 0.3s, color 0.3s;
-    }
-    
-    .btn-footer:hover {
-      background: #ff7e5f;
-      color: #fff;
-    }
-    
-    footer {
-      background: linear-gradient(135deg, #feb47b, #ff7e5f);
-      color: #fff;
-      text-align: center;
-      padding: 20px 10px;
-      margin-top: 40px;
-      animation: fadeInUp 1s ease-out;
-    }
-    
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    
-    html {
-      scroll-behavior: smooth;
-    }
+    
+    /* כפתור יצירת קשר בתחתית */
+    .btn-footer {
+      background: #fff;
+      color: #ff7e5f;
+      padding: 8px 16px;
+      border-radius: 25px;
+      border: 2px solid #fff;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+    
+    .btn-footer:hover {
+      background: #ff7e5f;
+      color: #fff;
+    }
+    
+    footer {
+      background: linear-gradient(135deg, #feb47b, #ff7e5f);
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      animation: fadeInUp 1s ease-out;
+    }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
 
-    /* סגנון חדש לקליפים - מרכז ומסגרת צבעונית */
-    .video-wrapper {
-      text-align: center;
-      margin: 20px 0;
-      position: relative; /* Needed for potential aspect ratio control */
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-    }
-    
-    .video-wrapper iframe {
-       border: 4px solid;
-       border-image: linear-gradient(135deg, #ff7e5f, #feb47b) 1;
-       border-radius: 15px;
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
-    }
-  </style>
+    /* סגנון חדש לקליפים - מרכז ומסגרת צבעונית */
+    .video-wrapper {
+      text-align: center;
+      margin: 20px 0;
+      position: relative; /* Needed for potential aspect ratio control */
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .video-wrapper iframe {
+       border: 4px solid;
+       border-image: linear-gradient(135deg, #ff7e5f, #feb47b) 1;
+       border-radius: 15px;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>אוניברסיטת אריאל - מיקרו כלכלה 🎓</h1>
-    <p>אתר הקורס של ד"ר שי צבאן 😊</p>
-  </header>
-  
-  <div class="container">
-    <section class="content">
-      <div class="btn-header">ברוכים הבאים לקורס! 🎉</div>
-      <p>
-        אתם מוזמנים למסע מרתק בעולם המיקרו כלכלה, בו נחשוף יחד נושאים מרתקים ונגישים. כאן תמצאו תרגילים, פתרונות, הקלטות וחומרי לימוד שיסייעו לכם להבין ולהעמיק את עקרונות הכלכלה.
-      </p>
-    </section>
-    
-    <section class="content">
-      <div class="btn-header">פרטי המרצה 👨‍🏫</div>
-      <p>
-        מרצה הקורס: ד"ר שי צבאן<br>
-        ליצירת קשר: <a href="mailto:shay.tsaban@gmail.com" class="btn-footer">shay.tsaban@gmail.com 📧</a>
-      </p>
-    </section>
-    
-    <section class="content">
-      <div class="btn-header">מפגשים חיים - הצטרפו לתרגילים של יום חמישי כאן 📡</div>
-      <a href="https://yvc-ac-il.zoom.us/j/6302238641" class="btn-zoom" target="_blank">הצטרף למפגש הזום</a>
-    </section>
-    
-    <section class="content">
-      <div class="btn-header">סיכומי השיעור 📝</div>
-      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Course%20Notes%20-%202025%20B.xlsx" class="btn-download-summary" target="_blank" download>הורד את סיכומי השיעורים</a>
-    </section>
+  <header>
+    <h1>אוניברסיטת אריאל - מיקרו כלכלה 🎓</h1>
+    <p>אתר הקורס של ד"ר שי צבאן 😊</p>
+  </header>
+  
+  <div class="container">
+    <section class="content">
+      <div class="btn-header">ברוכים הבאים לקורס! 🎉</div>
+      <p>
+        אתם מוזמנים למסע מרתק בעולם המיקרו כלכלה, בו נחשוף יחד נושאים מרתקים ונגישים. כאן תמצאו תרגילים, פתרונות, הקלטות וחומרי לימוד שיסייעו לכם להבין ולהעמיק את עקרונות הכלכלה.
+      </p>
+    </section>
+    
+    <section class="content">
+      <div class="btn-header">פרטי המרצה 👨‍🏫</div>
+      <p>
+        מרצה הקורס: ד"ר שי צבאן<br>
+        ליצירת קשר: <a href="mailto:shay.tsaban@gmail.com" class="btn-footer">shay.tsaban@gmail.com 📧</a>
+      </p>
+    </section>
+    
+    <section class="content">
+      <div class="btn-header">מפגשים חיים - הצטרפו לתרגילים של יום חמישי כאן 📡</div>
+      <a href="https://yvc-ac-il.zoom.us/j/6302238641" class="btn-zoom" target="_blank">הצטרף למפגש הזום</a>
+    </section>
+    
+    <section class="content">
+      <div class="btn-header">סיכומי השיעור 📝</div>
+      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Course%20Notes%20-%202025%20B.xlsx" class="btn-download-summary" target="_blank" download>הורד את סיכומי השיעורים</a>
+    </section>
 
-    <section class="content">
-        <div class="btn-header">מטלת בונוס 🎯</div>
-        <p>
-          כאן תמצאו את מטלת הבונוס של הקורס, אותה עליכם להגיש באתר הקורס הרשמי - במודל - בצורה מסודרת ומדויקת לפי ההנחיות שניתנו, כדי להיות זכאים לבונוס, וזאת - עד לסיום הסמסטר.
-          מועד ההגשה המדוייק יקבע לאחר שנסיים את החומר.
-          התשובות שצוינו כאן הן בגדר טיוטה להכוונה. לאחר השלמת ההגשות, תפורסמנה תשובות סופיות לאחר הגהה.
-          באחריותכם לפעול בהתאם לנלמד, ובכל מקרה יינתן משקל גבוה לדרך ולנאותות הצגתה.
-        </p>
-        <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Questions%20Pool%20for%20Studs%20NO%20ANS.docx" class="btn-download" target="_blank" download>הורד את קובץ השאלות למטלה</a>
-        <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Questions%20Pool%20for%20Students%20ANS.xlsx" class="btn-download" target="_blank" download>הורד את קובץ התשובות למטלה</a>
-    </section>
+    <section class="content">
+        <div class="btn-header">מטלת בונוס 🎯</div>
+        <p>
+          כאן תמצאו את מטלת הבונוס של הקורס, אותה עליכם להגיש באתר הקורס הרשמי - במודל - בצורה מסודרת ומדויקת לפי ההנחיות שניתנו, כדי להיות זכאים לבונוס, וזאת - עד לסיום הסמסטר.
+          מועד ההגשה המדוייק יקבע לאחר שנסיים את החומר.
+          התשובות שצוינו כאן הן בגדר טיוטה להכוונה. לאחר השלמת ההגשות, תפורסמנה תשובות סופיות לאחר הגהה.
+          באחריותכם לפעול בהתאם לנלמד, ובכל מקרה יינתן משקל גבוה לדרך ולנאותות הצגתה.
+        </p>
+        <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Questions%20Pool%20for%20Studs%20NO%20ANS.docx" class="btn-download" target="_blank" download>הורד את קובץ השאלות למטלה</a>
+        <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Questions%20Pool%20for%20Students%20ANS.xlsx" class="btn-download" target="_blank" download>הורד את קובץ התשובות למטלה</a>
+    </section>
 
-     <section class="content">
-      <div class="btn-header">מבחנים לדוגמה - להתרשמות בלבד, עד אישור אקדמי 📝</div>
-      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Ariel 1 Tashpad A.pdf" class="btn-download-summary" target="_blank" download>מבחן לדוגמה 1 תשפד א</a>
-    </section>
-
-
-    
-    <section class="content">
-      <div class="btn-header">הקלטות המפגשים 🎥</div>
-      <p>הרצאה 1 - 19.3.2025 - עקומת התמורה, עלות כוללת, עלות ממוצעת ועלות שולית</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5sYpUWr3hIo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      
-      <h3 style="font-weight: normal;">תרגול 1 - 20.3.2025 - עקומת התמורה, בדגש על מהות עלות שולית</h3>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/H7nIH0dHjvA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      
-      <p>הרצאה 2 - 26.3.2025 - עקומת התמורה עם הקצאה יעילה ומספר סוגים של אילוצים</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6NnP4qzI-i8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      
-      <h3 style="font-weight: normal;">תרגול 2 - 27.3.2025 - אבטלה בהתייחסות למספר אילוצים</h3>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fY0wJebq_fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      
-      <p>הרצאה 3 - 2.4.2025 - מסחר בינלאומי והקצאה יעילה</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cpr8ICixxNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      
-      <h3 style="font-weight: normal;">תרגול 3 - 3.4.2025 - הקצאה יעילה</h3>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/yzztaBsa9Tc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>הרצאה 4 - 9.4.2025 - פונקציית הייצור</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/j70h-U2ePeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>הרצאה 5 - 23.4.2025 - הביקוש וגמישותו</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_76GhwkuNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <h3 style="font-weight: normal;">תרגול 5 - 24.4.2025 - ביקוש וגמישותו - שימו לב שתרגול 4 לא התקיים ב-10.4 לאור חופשת פסח </h3>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ah_0x8q9qMo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>הרצאה 6 - 7.5.2025 - שיווי משקל בתחרות משוכללת</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pZfkiTBJbKM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>תרגול 6 - 8.5.2025 - שיווי משקל בתחרות משוכללת</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VPEjRg_S1QU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>הרצאה 7 - 14.5.2025 - מס וסובסידיה</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/oP9UAstjgg0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>תרגול 7 - 15.5.2025 - שיווי משקל עם התערבות ממשלה</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NJm8opbzA7U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>הרצאה 8 - 21.5.2025 - מחיר מקסימום, מינימום והמשך דיון בסוגיות שיווי משקל</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VenYUuCWJ7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>תרגול 8 - 22.5.2025 - תרגול נוסף בשיווי משקל עם התערבות ממשלה</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/skAPzt9WHl4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-     <p>הרצאה 9 - 28.5.2025 - עודפי יצרן, צרכן, תקבולי הממשלה ממסים וסוגיות נוספות</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TVMsx1W-L_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>תרגול 9 - 29.5.2025 - תרגול נוסף בשיווי משקל עם אוכלוסיות צרכנים שונות</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SofsiZKKeX4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>הרצאה 10 - 4.6.2025 - תרגול אינטנסיבי חלק א - מבנה העלויות ועקומת התמורה</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z2z_g7lUkvM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>תרגול 10 - 5.6.2025 - תרגול אינטנסיבי חלק ב - הקצאה יעילה</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dDexkasHtOQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>הרצאה 11 - 11.6.2025 - תרגול אינטנסיבי חלק ג - הקצאה יעילה, מסחר בינלאומי ונושאים נוספים</p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tDmzu1agCkc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <p>תרגול 12 - 12.6.2025 - תרגול אינטנסיבי חלק ד </p>
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qx7D8YO2fjo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      
+     <section class="content">
+      <div class="btn-header">מבחנים לדוגמה - להתרשמות בלבד, עד אישור אקדמי 📝</div>
+      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Ariel 1 Tashpad A.pdf" class="btn-download-summary" target="_blank" download>מבחן לדוגמה 1 תשפד א</a>
+      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Ariel #2 Tashpah A.pdf" class="btn-download-summary" target="_blank" download>Ariel #2 Tashpah A.pdf</a>
+      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Ariel #3 Tashat A.pdf" class="btn-download-summary" target="_blank" download>Ariel #3 Tashat A.pdf</a>
+      <a href="https://raw.githubusercontent.com/shaytsaban/ArielMicroEconomics/main/Q&A Towards Exam.pdf" class="btn-download-summary" target="_blank" download>Q&A Towards Exam.pdf</a>
+    </section>
 
 
-      
-      <p>המשך יבוא...</p>
-    </section>
-  </div>
-  
-  <footer>
-    <p>האתר נבנה באהבה ע״י ד״ר צבאן האגדי, צרו קשר ב 
-      <a href="mailto:shay.tsaban@gmail.com" class="btn-footer">shay.tsaban@gmail.com</a> 😊😄✨
-    </p>
-  </footer>
+    
+    <section class="content">
+      <div class="btn-header">הקלטות המפגשים 🎥</div>
+      <p>הרצאה 1 - 19.3.2025 - עקומת התמורה, עלות כוללת, עלות ממוצעת ועלות שולית</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5sYpUWr3hIo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <h3 style="font-weight: normal;">תרגול 1 - 20.3.2025 - עקומת התמורה, בדגש על מהות עלות שולית</h3>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/H7nIH0dHjvA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <p>הרצאה 2 - 26.3.2025 - עקומת התמורה עם הקצאה יעילה ומספר סוגים של אילוצים</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6NnP4qzI-i8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <h3 style="font-weight: normal;">תרגול 2 - 27.3.2025 - אבטלה בהתייחסות למספר אילוצים</h3>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fY0wJebq_fU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <p>הרצאה 3 - 2.4.2025 - מסחר בינלאומי והקצאה יעילה</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cpr8ICixxNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <h3 style="font-weight: normal;">תרגול 3 - 3.4.2025 - הקצאה יעילה</h3>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yzztaBsa9Tc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>הרצאה 4 - 9.4.2025 - פונקציית הייצור</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/j70h-U2ePeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>הרצאה 5 - 23.4.2025 - הביקוש וגמישותו</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_76GhwkuNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <h3 style="font-weight: normal;">תרגול 5 - 24.4.2025 - ביקוש וגמישותו - שימו לב שתרגול 4 לא התקיים ב-10.4 לאור חופשת פסח </h3>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ah_0x8q9qMo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>הרצאה 6 - 7.5.2025 - שיווי משקל בתחרות משוכללת</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pZfkiTBJbKM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>תרגול 6 - 8.5.2025 - שיווי משקל בתחרות משוכללת</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VPEjRg_S1QU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>הרצאה 7 - 14.5.2025 - מס וסובסידיה</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oP9UAstjgg0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>תרגול 7 - 15.5.2025 - שיווי משקל עם התערבות ממשלה</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NJm8opbzA7U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>הרצאה 8 - 21.5.2025 - מחיר מקסימום, מינימום והמשך דיון בסוגיות שיווי משקל</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VenYUuCWJ7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>תרגול 8 - 22.5.2025 - תרגול נוסף בשיווי משקל עם התערבות ממשלה</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/skAPzt9WHl4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+     <p>הרצאה 9 - 28.5.2025 - עודפי יצרן, צרכן, תקבולי הממשלה ממסים וסוגיות נוספות</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TVMsx1W-L_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>תרגול 9 - 29.5.2025 - תרגול נוסף בשיווי משקל עם אוכלוסיות צרכנים שונות</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SofsiZKKeX4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>הרצאה 10 - 4.6.2025 - תרגול אינטנסיבי חלק א - מבנה העלויות ועקומת התמורה</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z2z_g7lUkvM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>תרגול 10 - 5.6.2025 - תרגול אינטנסיבי חלק ב - הקצאה יעילה</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dDexkasHtOQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>הרצאה 11 - 11.6.2025 - תרגול אינטנסיבי חלק ג - הקצאה יעילה, מסחר בינלאומי ונושאים נוספים</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tDmzu1agCkc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p>תרגול 12 - 12.6.2025 - תרגול אינטנסיבי חלק ד </p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qx7D8YO2fjo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      
+
+
+      
+      <p>המשך יבוא...</p>
+    </section>
+  </div>
+  
+  <footer>
+    <p>האתר נבנה באהבה ע״י ד״ר צבאן האגדי, צרו קשר ב 
+      <a href="mailto:shay.tsaban@gmail.com" class="btn-footer">shay.tsaban@gmail.com</a> 😊😄✨
+    </p>
+  </footer>
 </body>
 </html>
